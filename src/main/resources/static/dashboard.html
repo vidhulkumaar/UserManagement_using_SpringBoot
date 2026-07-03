@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User Dashboard</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<div class="dashboard">
+
+    <h1>User Management Dashboard</h1>
+
+    <div class="form-card">
+
+        <input type="hidden" id="id">
+
+        <input type="text" id="name" placeholder="Enter Name">
+
+        <input type="email" id="email" placeholder="Enter Email">
+
+        <input type="password" id="password" placeholder="Enter Password">
+
+        <div class="button-group">
+
+            <button class="add-btn" onclick="saveUser()">➕ Add</button>
+
+            <button class="logout-btn" onclick="logout()">🚪 Logout</button>
+
+        </div>
+
+    </div>
+
+    <div class="table-card">
+
+        <table id="userTable">
+
+            <thead>
+
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th colspan="2">Action</th>
+            </tr>
+
+            </thead>
+
+            <tbody></tbody>
+
+        </table>
+
+    </div>
+
+</div>
+
+<script src="js/dashboard.js"></script>
+
+</body>
+</html>
